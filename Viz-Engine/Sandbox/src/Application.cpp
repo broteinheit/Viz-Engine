@@ -1,10 +1,20 @@
+#include <Viz.h>
 
-namespace Viz
+class Sandbox : public Viz::Application
 {
-	__declspec(dllimport) void Print();
-}
+public:
+	Sandbox()
+	{
 
-void main()
+	}
+
+	~Sandbox()
+	{
+
+	}
+};
+
+Viz::Application* Viz::CreateApplication()
 {
-	Viz::Print();
+	return new Sandbox();
 }
