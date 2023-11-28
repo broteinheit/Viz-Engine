@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Viz {
 	class VIZ_API WindowResizeEvent : public Event {
 	public:

@@ -34,6 +34,7 @@
     <ClInclude Include="src\Viz\Log.h">
       <Filter>Viz</Filter>
     </ClInclude>
+    <ClInclude Include="src\vizpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Viz\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Viz\Log.cpp">
       <Filter>Viz</Filter>
     </ClCompile>
+    <ClCompile Include="src\vizpch.cpp" />
   </ItemGroup>
 </Project>

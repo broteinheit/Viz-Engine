@@ -1,3 +1,4 @@
+#include "vizpch.h"
 #include "Application.h"
 
 #include "Viz/Events/ApplicationEvent.h"

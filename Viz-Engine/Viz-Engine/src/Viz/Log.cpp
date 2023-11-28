@@ -1,3 +1,4 @@
+#include "vizpch.h"
 #include "Log.h"
 
 namespace Viz {

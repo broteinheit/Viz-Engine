@@ -19,6 +19,9 @@ project 'Viz-Engine'
 	targetdir ('bin/' .. outputdir .. '/%{prj.name}')
 	objdir ('bin-int/' .. outputdir .. '/%{prj.name}')
 
+	pchheader "vizpch.h"
+	pchsource "Viz-Engine/src/vizpch.cpp"
+
 	files
 	{
 		'%{prj.name}/src/**.h',
