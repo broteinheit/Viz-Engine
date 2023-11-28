@@ -1,4 +1,4 @@
-workspace 'Viz'
+workspace 'Viz-Engine'
 	architecture 'x64'
 
 	configurations
@@ -9,6 +9,12 @@ workspace 'Viz'
 	}
 
 outputdir = '%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}'
+
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir['GLFW'] = 'vendor/GLFW/include'
+
+include 'vendor/GLFW'
 
 project 'Viz-Engine'
 	location 'Viz-Engine'
@@ -31,7 +37,14 @@ project 'Viz-Engine'
 	includedirs
 	{
 		'%{prj.name}/src',
-		'vendor/spdlog/include'
+		'vendor/spdlog/include',
+		'%{IncludeDir.GLFW}'
+	}
+
+	links
+	{
+		'GLFW',
+		'opengl32.lib'
 	}
 
 	filter 'system:windows'

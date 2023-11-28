@@ -12,7 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-
+#include "Viz/Log.h"
 
 #ifdef VIZ_PLATFORM_WINDOWS
 	#include <Windows.h>

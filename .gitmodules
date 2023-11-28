@@ -1,3 +1,6 @@
 [submodule "Viz-Engine/vendor/spdlog"]
 	path = Viz-Engine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Viz-Engine/vendor/GLFW"]
+	path = Viz-Engine/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW
