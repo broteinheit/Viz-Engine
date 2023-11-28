@@ -6,8 +6,6 @@ extern Viz::Application* Viz::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	printf("Viz Engine\n");
-
 	Viz::Log::Init();
 	VIZ_CORE_WARN("Initialized Log!");
 	int a = 5;
