@@ -40,7 +40,8 @@ project 'Viz-Engine'
 		{
 			'VIZ_PLATFORM_WINDOWS',
 			'VIZ_BUILD_DLL',
-			"_WINDLL"
+			"_WINDLL",
+			"_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS"
 
 		}
 

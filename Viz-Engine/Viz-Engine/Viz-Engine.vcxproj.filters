@@ -4,6 +4,9 @@
     <Filter Include="Viz">
       <UniqueIdentifier>{BE2E880B-2A38-887C-B3B3-9E7C1FBC937C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Viz\Events">
+      <UniqueIdentifier>{E2181ABB-CED0-5B08-37D8-346423AFF6F8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Viz.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Viz\EntryPoint.h">
       <Filter>Viz</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Viz\Events\ApplicationEvent.h">
+      <Filter>Viz\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Viz\Events\Event.h">
+      <Filter>Viz\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Viz\Events\KeyEvent.h">
+      <Filter>Viz\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Viz\Events\MouseEvent.h">
+      <Filter>Viz\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Viz\Log.h">
       <Filter>Viz</Filter>

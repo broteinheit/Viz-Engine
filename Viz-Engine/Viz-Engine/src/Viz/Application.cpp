@@ -1,5 +1,8 @@
 #include "Application.h"
 
+#include "Viz/Events/ApplicationEvent.h"
+#include "Viz/Log.h"
+
 namespace Viz {
 
 	Application::Application()
@@ -12,6 +15,9 @@ namespace Viz {
 
 	void Application::Run()
 	{
+		WindowResizeEvent e(1280, 720);
+		VIZ_TRACE(e);
+
 		while (true);
 	}
 

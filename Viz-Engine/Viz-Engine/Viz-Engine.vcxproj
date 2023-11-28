@@ -78,7 +78,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>VIZ_PLATFORM_WINDOWS;VIZ_BUILD_DLL;_WINDLL;VIZ_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VIZ_PLATFORM_WINDOWS;VIZ_BUILD_DLL;_WINDLL;_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS;VIZ_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;..\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -99,7 +99,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>VIZ_PLATFORM_WINDOWS;VIZ_BUILD_DLL;_WINDLL;VIZ_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VIZ_PLATFORM_WINDOWS;VIZ_BUILD_DLL;_WINDLL;_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS;VIZ_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;..\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -124,7 +124,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>VIZ_PLATFORM_WINDOWS;VIZ_BUILD_DLL;_WINDLL;VIZ_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VIZ_PLATFORM_WINDOWS;VIZ_BUILD_DLL;_WINDLL;_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS;VIZ_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;..\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -150,6 +150,10 @@
     <ClInclude Include="src\Viz\Application.h" />
     <ClInclude Include="src\Viz\Core.h" />
     <ClInclude Include="src\Viz\EntryPoint.h" />
+    <ClInclude Include="src\Viz\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Viz\Events\Event.h" />
+    <ClInclude Include="src\Viz\Events\KeyEvent.h" />
+    <ClInclude Include="src\Viz\Events\MouseEvent.h" />
     <ClInclude Include="src\Viz\Log.h" />
   </ItemGroup>
   <ItemGroup>
