@@ -8,6 +8,11 @@ int main(int argc, char** argv)
 {
 	printf("Viz Engine\n");
 
+	Viz::Log::Init();
+	VIZ_CORE_WARN("Initialized Log!");
+	int a = 5;
+	VIZ_INFO("Hello! Var={0}", a);
+
 	auto app = Viz::CreateApplication();
 	app->Run();
 	delete app;
